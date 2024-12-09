@@ -71,7 +71,7 @@ export function Navigation() {
                       "flex items-center gap-2 px-4 py-2 rounded-lg transition-colors",
                       pathname === route.href
                         ? "bg-primary/10 text-primary"
-                        : "text-muted-foreground hover:bg-primary/5"
+                        : "text-muted-foreground hover:bg-primary/5",
                     )}
                   >
                     <route.icon className="h-5 w-5" />
@@ -93,7 +93,9 @@ export function Navigation() {
               href={route.href}
               className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
-                pathname === route.href ? "text-primary" : "text-muted-foreground"
+                pathname === route.href
+                  ? "text-primary"
+                  : "text-muted-foreground",
               )}
             >
               {route.label}

@@ -14,21 +14,25 @@ const causes = [
     description: "Providing clean water access to rural communities in need",
     raised: 85000,
     goal: 100000,
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&auto=format&fit=crop&q=60",
   },
   {
     title: "Education for All",
-    description: "Supporting underprivileged students with educational resources",
+    description:
+      "Supporting underprivileged students with educational resources",
     raised: 30000,
     goal: 50000,
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=60",
   },
   {
     title: "Healthcare Access",
     description: "Improving medical facilities in remote areas",
     raised: 40000,
     goal: 100000,
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=60",
+    image:
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=60",
   },
 ];
 
@@ -42,8 +46,8 @@ export function FeaturedCauses() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Featured Causes</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Support these ongoing initiatives and help us make a lasting impact in
-            communities around the world.
+            Support these ongoing initiatives and help us make a lasting impact
+            in communities around the world.
           </p>
         </div>
 
@@ -63,17 +67,25 @@ export function FeaturedCauses() {
                 />
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{cause.title}</h3>
-                  <p className="text-muted-foreground mb-4">{cause.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {cause.description}
+                  </p>
                   <Progress
                     value={(cause.raised / cause.goal) * 100}
                     className="h-2 mb-4"
                   />
                   <div className="flex justify-between text-sm mb-4">
                     <span>
-                      Raised: <span className="font-semibold">${cause.raised.toLocaleString()}</span>
+                      Raised:{" "}
+                      <span className="font-semibold">
+                        ${cause.raised.toLocaleString()}
+                      </span>
                     </span>
                     <span>
-                      Goal: <span className="font-semibold">${cause.goal.toLocaleString()}</span>
+                      Goal:{" "}
+                      <span className="font-semibold">
+                        ${cause.goal.toLocaleString()}
+                      </span>
                     </span>
                   </div>
                   <Button asChild className="w-full">

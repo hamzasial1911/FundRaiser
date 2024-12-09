@@ -34,7 +34,9 @@ export function ProgressSection() {
               <div className="flex justify-between items-center">
                 <div>
                   <p className="text-2xl font-bold">${progress},000</p>
-                  <p className="text-sm text-muted-foreground">Current Amount</p>
+                  <p className="text-sm text-muted-foreground">
+                    Current Amount
+                  </p>
                 </div>
                 <div className="text-right">
                   <p className="text-2xl font-bold">$100,000</p>

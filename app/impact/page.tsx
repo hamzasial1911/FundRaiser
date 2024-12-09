@@ -3,26 +3,26 @@
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { motion } from "framer-motion";
-import { Heart, Users, Target, Landmark } from "lucide-react";
+import { Users, Heart, Target, Landmark } from "lucide-react";
 
 const impactStats = [
   {
-    icon: Users,
+    icon: <Users className="h-8 w-8 mx-auto mb-4 text-primary" />,
     value: "10,000+",
     label: "Lives Impacted",
   },
   {
-    icon: Heart,
+    icon: <Heart className="h-8 w-8 mx-auto mb-4 text-primary" />,
     value: "$250K",
     label: "Total Raised",
   },
   {
-    icon: Target,
+    icon: <Target className="h-8 w-8 mx-auto mb-4 text-primary" />,
     value: "50+",
     label: "Projects Completed",
   },
   {
-    icon: Landmark,
+    icon: <Landmark className="h-8 w-8 mx-auto mb-4 text-primary" />,
     value: "25+",
     label: "Partner Organizations",
   },
@@ -41,7 +41,8 @@ const projects = [
     progress: 60,
     raised: 30000,
     goal: 50000,
-    description: "Supporting underprivileged students with educational resources",
+    description:
+      "Supporting underprivileged students with educational resources",
   },
   {
     title: "Healthcare Access",
@@ -63,8 +64,9 @@ export default function ImpactPage() {
         >
           <h1 className="text-4xl font-bold mb-6 text-center">Our Impact</h1>
           <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
-            Through the generosity of our donors, we've made significant progress in
-            creating positive change. Here's how your donations are making a difference.
+            Through the generosity of our donors, we've made significant
+            progress in creating positive change. Here's how your donations are
+            making a difference.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
@@ -76,7 +78,7 @@ export default function ImpactPage() {
                 transition={{ delay: index * 0.1 }}
               >
                 <Card className="p-6 text-center">
-                  <stat.icon className="h-8 w-8 mx-auto mb-4 text-primary" />
+                  {stat.icon}
                   <h3 className="text-2xl font-bold mb-2">{stat.value}</h3>
                   <p className="text-muted-foreground">{stat.label}</p>
                 </Card>
@@ -95,7 +97,9 @@ export default function ImpactPage() {
               >
                 <Card className="p-6">
                   <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-muted-foreground mb-4">
+                    {project.description}
+                  </p>
                   <Progress value={project.progress} className="h-2 mb-2" />
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">

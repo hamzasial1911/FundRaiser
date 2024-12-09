@@ -24,7 +24,8 @@ export function VideoSection() {
         >
           <h2 className="text-3xl font-bold mb-4">See Our Impact</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Watch how your donations are making a real difference in communities around the world.
+            Watch how your donations are making a real difference in communities
+            around the world.
           </p>
         </motion.div>
 
@@ -78,7 +79,8 @@ export function VideoSection() {
           {[
             {
               title: "Clean Water Projects",
-              description: "Providing access to clean water in rural communities",
+              description:
+                "Providing access to clean water in rural communities",
             },
             {
               title: "Education Initiatives",
@@ -91,7 +93,9 @@ export function VideoSection() {
           ].map((item) => (
             <Card key={item.title} className="p-6">
               <h3 className="font-semibold mb-2">{item.title}</h3>
-              <p className="text-sm text-muted-foreground">{item.description}</p>
+              <p className="text-sm text-muted-foreground">
+                {item.description}
+              </p>
             </Card>
           ))}
         </motion.div>

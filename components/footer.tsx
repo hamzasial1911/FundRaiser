@@ -1,7 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { Heart, Facebook, Twitter, Instagram, Shield, Lock, Award } from "lucide-react";
+import {
+  Heart,
+  Facebook,
+  Twitter,
+  Instagram,
+  Shield,
+  Lock,
+  Award,
+} from "lucide-react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
@@ -59,7 +67,9 @@ export function Footer() {
               </div>
               <div>
                 <h3 className="font-semibold">{indicator.title}</h3>
-                <p className="text-sm text-muted-foreground">{indicator.description}</p>
+                <p className="text-sm text-muted-foreground">
+                  {indicator.description}
+                </p>
               </div>
             </div>
           ))}
@@ -68,7 +78,8 @@ export function Footer() {
         <div className="mb-12 p-8 rounded-lg bg-primary/5 border text-center">
           <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
           <p className="text-muted-foreground mb-6">
-            Join our newsletter to get updates on our impact and latest campaigns
+            Join our newsletter to get updates on our impact and latest
+            campaigns
           </p>
           <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

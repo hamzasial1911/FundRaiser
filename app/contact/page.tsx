@@ -15,9 +15,10 @@ export default function ContactPage() {
           <div>
             <h1 className="text-4xl font-bold mb-6">Get in Touch</h1>
             <p className="text-muted-foreground mb-8">
-              Have questions about donations or want to learn more about our cause? We're here to help.
+              Have questions about donations or want to learn more about our
+              cause? We're here to help.
             </p>
-            
+
             <div className="space-y-6">
               <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
@@ -25,10 +26,12 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold">Email Us</h3>
-                  <p className="text-muted-foreground">support@fundraiser.org</p>
+                  <p className="text-muted-foreground">
+                    support@fundraiser.org
+                  </p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <Phone className="h-6 w-6 text-primary" />
@@ -38,36 +41,38 @@ export default function ContactPage() {
                   <p className="text-muted-foreground">+1 (555) 123-4567</p>
                 </div>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <MessageSquare className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <h3 className="font-semibold">Live Chat</h3>
-                  <p className="text-muted-foreground">Available Mon-Fri, 9am-5pm EST</p>
+                  <p className="text-muted-foreground">
+                    Available Mon-Fri, 9am-5pm EST
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          
+
           <Card className="p-6">
             <form className="space-y-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
                 <Input id="name" placeholder="Your name" />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" placeholder="Your email" />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="subject">Subject</Label>
                 <Input id="subject" placeholder="How can we help?" />
               </div>
-              
+
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
                 <Textarea
@@ -76,7 +81,7 @@ export default function ContactPage() {
                   className="min-h-[150px]"
                 />
               </div>
-              
+
               <Button className="w-full">Send Message</Button>
             </form>
           </Card>

@@ -39,15 +39,11 @@ export function HeroSection() {
           </h1>
         </div>
         <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Join thousands of donors who have already contributed to creating positive
-          change. Every donation brings hope to those who need it most.
+          Join thousands of donors who have already contributed to creating
+          positive change. Every donation brings hope to those who need it most.
         </p>
         <div className="mb-16">
-          <Button
-            asChild
-            size="lg"
-            className="rounded-full px-8 py-6 text-lg"
-          >
+          <Button asChild size="lg" className="rounded-full px-8 py-6 text-lg">
             <Link href="/donate">
               Donate Now
               <Heart className="ml-2 h-5 w-5" />

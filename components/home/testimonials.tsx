@@ -8,17 +8,20 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Making a donation was incredibly easy and transparent. I love being able to see the direct impact of my contribution.",
+    quote:
+      "Making a donation was incredibly easy and transparent. I love being able to see the direct impact of my contribution.",
     author: "Sarah M.",
     role: "Regular Donor",
   },
   {
-    quote: "This platform has transformed how we connect with donors. The tools and support provided are exceptional.",
+    quote:
+      "This platform has transformed how we connect with donors. The tools and support provided are exceptional.",
     author: "David Chen",
     role: "Nonprofit Partner",
   },
   {
-    quote: "I appreciate the regular updates about how my donations are making a difference in the community.",
+    quote:
+      "I appreciate the regular updates about how my donations are making a difference in the community.",
     author: "Michael R.",
     role: "Monthly Supporter",
   },
@@ -34,8 +37,8 @@ export function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">What People Say</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Hear from our community of donors and partners about their experiences
-            with our platform.
+            Hear from our community of donors and partners about their
+            experiences with our platform.
           </p>
         </div>
 

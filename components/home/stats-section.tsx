@@ -47,7 +47,10 @@ export function StatsSection() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-background to-secondary/20" ref={ref}>
+    <section
+      className="py-24 px-4 bg-gradient-to-b from-background to-secondary/20"
+      ref={ref}
+    >
       <motion.div
         variants={container}
         initial="hidden"
@@ -64,8 +67,12 @@ export function StatsSection() {
                   <stat.icon className="h-12 w-12 mx-auto text-primary relative" />
                 </div>
                 <h3 className="text-3xl font-bold mb-2">{stat.value}</h3>
-                <p className="text-lg font-semibold text-primary mb-2">{stat.label}</p>
-                <p className="text-muted-foreground text-sm">{stat.description}</p>
+                <p className="text-lg font-semibold text-primary mb-2">
+                  {stat.label}
+                </p>
+                <p className="text-muted-foreground text-sm">
+                  {stat.description}
+                </p>
               </div>
             </Card>
           </motion.div>

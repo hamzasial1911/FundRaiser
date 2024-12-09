@@ -39,8 +39,9 @@
 .gradient-border {
   position: relative;
   border-radius: var(--radius);
-  background: linear-gradient(var(--background), var(--background)) padding-box,
-              linear-gradient(to right, hsl(var(--primary)), hsl(var(--ring))) border-box;
+  background:
+    linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(to right, hsl(var(--primary)), hsl(var(--ring))) border-box;
   border: 2px solid transparent;
 }
 
